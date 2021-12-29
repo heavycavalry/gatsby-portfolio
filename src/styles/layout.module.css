@@ -1,0 +1,11 @@
+.layout {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 90%;
+    padding: 2rem 0;
+}
+
+.layout footer {
+position: absolute;
+bottom: 1rem;
+}

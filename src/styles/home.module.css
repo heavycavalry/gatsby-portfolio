@@ -1,0 +1,84 @@
+.header .content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.content h1 {  
+    font-size: 2.2rem;
+}
+
+.content h1 span{  
+    font-size: 5rem;
+    color: #ef476f;
+    font-family: 'Bonheur Royale', cursive;
+}
+
+.content h2 {  
+    font-size: 1.5rem;
+}
+
+
+.content p a {  
+    border-bottom: 2px solid white;
+}
+.content p a:hover {  
+    border-bottom: 2px solid rgba(255, 255, 255, 0.578);
+    color: rgba(255, 255, 255, 0.578);
+}
+
+.content> div > a{
+    margin: 1rem 0;
+}
+
+.content .button {
+    padding: 1rem;
+    border-radius: 30px;
+    text-transform: uppercase;
+    background: transparent;
+    cursor: pointer;
+    width: max-content;
+}
+
+.content .button {
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid #ffd166;
+    color: white;
+    color: #ffd166;
+}
+
+.content .button:hover {
+    color: #06d6a0;
+    box-shadow: inset 0 0 1em #06d6a0, 0 0 1em #06d6a0;
+    border: 2px solid #06d6a0;
+}
+
+.content .button:active {
+    background-color: #06d6a0;
+    color: #073b4c;
+}
+
+
+.image {
+    display: none;
+}
+
+
+@media (min-width: 900px) {
+    .header {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .header .content {
+        align-items: flex-start;
+        text-align: left;
+        width: 50%;
+
+    }
+    .image {
+        display: unset;
+        width: 60%;
+    }
+}
