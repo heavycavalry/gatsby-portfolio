@@ -3,7 +3,8 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1600 1200" style="enable-background:new 0 0 1600 1200;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#EC615B;}
+	.st0{fill:#ef476f;}
+	#lightbulb{fill:#ef476f;}
 	.st1{fill:#5222D0;}
 	.st2{fill:#E8E8E8;}
 	.st3{fill:#FFFFFF;stroke:#161616;stroke-width:2;stroke-miterlimit:10;}
@@ -26,7 +27,7 @@
 	.st20{opacity:0.35;fill:#341999;}
 </style>
 <g id="color">
-	<path class="st0" d="M932.9,129.8c-24.5,14.5-31.5,39.5-34.4,49.8c-0.7,2.5-8.9,33.2,5.3,65.2c4.2,9.5,8.7,19.3,18.9,24
+	<path id="lightbulb" d="M932.9,129.8c-24.5,14.5-31.5,39.5-34.4,49.8c-0.7,2.5-8.9,33.2,5.3,65.2c4.2,9.5,8.7,19.3,18.9,24
 		c5.9,2.8,11.2,2.6,32,0.8c9.7-0.8,20.2-1.8,31.4-3c7.9-10.1,21.5-30.3,25.5-58.7c0.7-5.3,8.9-68.5-25.5-85.3
 		C963.6,111.5,936.5,127.6,932.9,129.8z"/>
 	<ellipse class="st0" cx="480.5" cy="253.9" rx="22.6" ry="25"/>

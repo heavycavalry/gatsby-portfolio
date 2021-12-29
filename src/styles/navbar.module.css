@@ -49,14 +49,14 @@
     border: 2px solid #06d6a0;
 }
 
-.navbar .button:hover {
+.navbar .button:hover,
+.button:focus {
     box-shadow: inset 0 0 1em #ffd166, 0 0 1em #ffd166;
     border: 2px solid #ffd166;
     color: #ffd166;
 }
 
-.navbar.button:active {
-    box-shadow: inset 0 0 1em #ffd166, 0 0 1em #ffd166;
-    border: 2px solid #ffd166;
+.navbar .button:active {
     background-color: #ffd166;
+    color: #073b4c;
 }
