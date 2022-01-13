@@ -1,21 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Montserrat+Alternates&family=Poppins:wght@500&display=swap');
+@import "./colors.css";
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: #073b4c;
+    background: var(--color-background);
     color: white;
     line-height: 1.5;
     font-family: 'Montserrat Alternates', sans-serif;
 }
 
 html, body {
-    font-size: 16px;
-    max-height: 100%;
+    font-size: 100%;
+    height: 100%;
     overflow: hidden;
 }
 
 a {
     text-decoration: none;
     color: inherit;
+}
+
+img {
+    display: none;
+    width: 100%;
+}
+
+@media (min-width: 900px) {
+    img {
+        display: block;
+        width: 100%;
+    }
 }

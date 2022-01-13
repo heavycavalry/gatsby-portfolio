@@ -1,55 +1,37 @@
-.header .content {
+.header {
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
 }
 
-.content h1 {  
-    font-size: 2.2rem;
+.header h1 {  
+    font-size: 2rem;
 }
 
-.content h1 span{  
+.header h1 span{  
     font-size: 5rem;
-    color: #ef476f;
+    color: var(--color-pink);
     font-family: 'Bonheur Royale', cursive;
 }
 
-.animation {  
-    font-size: 1.5rem;
+.typewriter {  
+    font-size: 1.8rem;
     position: relative;
+    font-family: 'Poppins', sans-serif;
+    color: #ffd166;
 }
 
-.animation::after {
-    content: "";
-    position: absolute;
-    width: 2px;
-    height: 2rem;
-    background-color: white;
-    left: 0;
-    opacity: 0;
-    animation: blink 1s infinite ease;
-}
-
-@keyframes blink {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 100%;
-    }
-    
-}
-.content p a {  
+.header p a {  
     border-bottom: 2px solid white;
 }
-.content p a:hover {  
+.header p a:hover {  
     border-bottom: 2px solid rgba(255, 255, 255, 0.578);
     color: rgba(255, 255, 255, 0.578);
 }
 
-.content> div > a{
-    margin: 1rem 0;
+.header> div > a{
+    margin: 0.5rem 0;
 }
 
 .button {
@@ -62,7 +44,7 @@
     font-family: 'Poppins', sans-serif;
     border: 2px solid #ffd166;
     color: #ffd166;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 .button:hover,
@@ -78,23 +60,10 @@
 }
 
 
-.image {
-    display: none;
-}
-
 
 @media (min-width: 900px) {
     .header {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .header .content {
         align-items: flex-start;
         text-align: left;
-    }
-    .image {
-        display: unset;
-        width: 50%;
     }
 }

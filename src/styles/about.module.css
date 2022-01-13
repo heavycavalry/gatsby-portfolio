@@ -1,0 +1,35 @@
+@import "./colors.css";
+p {
+    font-family: 'Poppins', sans-serif;
+}
+
+.icons {
+    display: flex;
+}
+
+.icons > * {
+    margin: 1rem;
+    text-align: center;
+    font-size: 0.8rem;
+}
+.icons > *:hover {
+    color: var(--color-neon-blue);
+}
+
+.icon {
+    font-size: 3rem;
+    color: var(--color-yellow);
+
+}
+
+.typewriter {
+    font-size: 1.5rem;
+}
+
+h2 {
+    color: var(--color-pink);
+    font-family: 'Bonheur Royale', cursive;
+    font-size: 5rem;
+    margin: 1rem 0;
+}
+

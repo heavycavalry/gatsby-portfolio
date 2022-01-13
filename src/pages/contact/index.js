@@ -4,7 +4,10 @@ import Layout from "../../components/Layout"
 export default function Projects() {
   return (
     <Layout>
-      <h2>Contact me</h2>
+      <div>
+        <h2>Contact me</h2>
+        <img src="/blogging.svg" />
+      </div>
     </Layout>
   )
 }

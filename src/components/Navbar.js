@@ -1,20 +1,31 @@
 import React from "react"
 import { Link } from "gatsby"
-import { navbar, links, button, contact } from "../styles/navbar.module.css"
+import { navbar, links } from "../styles/navbar.module.css"
+import { FaUser } from "@react-icons/all-files/fa/FaUser"
+import { FaHome } from "@react-icons/all-files/fa/FaHome"
+import { FaImage } from "@react-icons/all-files/fa/FaImage"
+import { FaEnvelope } from "@react-icons/all-files/fa/FaEnvelope"
 export default function Navbar() {
   return (
-    <nav className={navbar}>
-      <div className={links}>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/projects">Projects</Link>
-        <Link className={contact} to="/contact">
-          Contact
-        </Link>
-      </div>
-      <Link className={button} to="/contact">
-        Get in contact
+    <nav className={links}>
+      <Link aria-label="home" to="/">
+        <FaHome />
+      </Link>
+      <Link aria-label="about me" to="/about">
+        <FaUser />
+      </Link>
+      <Link aria-label="projects" to="/projects">
+        <FaImage />
+      </Link>
+      <Link aria-label="contact" to="/contact">
+        <FaEnvelope />
       </Link>
     </nav>
   )
+}
+
+{
+  /* <Link className={button} to="/contact">
+        Get in contact
+      </Link> */
 }

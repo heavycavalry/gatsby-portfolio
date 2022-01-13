@@ -1,11 +1,23 @@
 .layout {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 3rem auto;
     width: 90%;
-    padding: 2rem 0;
+    height: 100%;
 }
 
+.layout>div {
+    margin-left: 3rem;
+}
+
+@media (min-width: 900px) {
+    .layout>div {
+        display: grid;
+        place-content: center;
+        grid-template-columns: 2fr 3fr;
+    }
+}
 .layout footer {
-position: absolute;
-bottom: 1rem;
+    position: absolute;
+    bottom: 1rem;
+    right: 2rem;
 }

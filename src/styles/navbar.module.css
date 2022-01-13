@@ -1,38 +1,48 @@
-.navbar {
+.links {
+    position: absolute;
+    left:0;
+    top:0;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+
 }
 
 .links a {
-    padding-right: 2rem ;
-    position: relative;
-    z-index: 9;
+    height: 25%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #073b4c;
+    background-color:#06d6a0;
+}
+.links a:hover {
+    transition: 0.5s linear;
+    background-color: #073b4c;
     color: #06d6a0;
+    font-size: 1rem;
 }
-
-.links a::after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    width: 0%;
-    height: 2px;
-    background-color: #ffd166;
-    left: 0;
-    bottom: 0;
-}
-
-.links a:hover:after {
-    width: 70%;
-    transition: width 1s;
-}
-
-@media(max-width: 900px) {
-    .links .contact {
-        display: none;
-    }
+.links a:focus {
+    transition: 0.5s linear;
+    background-color: #073b4c;
+    color: #06d6a0;
+    font-size: 1rem;
 }
 
 
+.links a>* {
+    font-size: 2rem;
+}
+
+
+/* .active {
+    transition: 0.5s linear;
+    background-color: #073b4c;
+    color: #ef476f;
+    } */
+
+/* 
 .button {
     font-family: 'Poppins', sans-serif;
     padding: 1rem;
@@ -59,4 +69,5 @@
 .navbar .button:active {
     background-color: #ffd166;
     color: #073b4c;
-}
+} */
+
